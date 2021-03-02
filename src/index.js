@@ -1,21 +1,21 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
+import Test from './Test'
+import HelloComponent from './component/HelloComponent'
+import Login from './component/Login'
 import reportWebVitals from './reportWebVitals';
 
-const Hello = () =>{
-  return <p>hello</p>
-}
+  class StateFullComponent extends React.Component {
+    render() {
+      return <p> StateFullComponents </p>
+    }
+  }
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(<Login />, document.getElementById('root'));
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
